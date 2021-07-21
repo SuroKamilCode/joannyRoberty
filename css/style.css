@@ -5,9 +5,15 @@
           box-sizing: border-box;
 }
 
+body {
+  background-color: beige;
+}
+
 .intro {
   position: relative;
-  height: 100vh;
+  min-height: 80vh;
+  max-width: 1366px;
+  margin: 0 auto;
 }
 
 .intro .logo {
@@ -21,34 +27,218 @@
 
 .intro .container {
   position: absolute;
-  top: 34%;
+  top: 32%;
   left: 50%;
+  width: 70%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   font-family: 'cinzel', arial, sans-serif;
   text-align: center;
-  font-size: 15px;
-}
-
-.intro .container .hello {
-  margin-bottom: 13px;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
+  padding: 10px 0;
 }
 
 .intro .container .about {
-  font-size: 14px;
+  font-size: 13px;
+  letter-spacing: 1px;
 }
 
-button {
+.button {
   position: absolute;
-  top: 85%;
+  top: 105%;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  padding: 10px;
-  background-color: white;
   border: 1px solid black;
-  text-transform: uppercase;
+  padding: 10px 20px;
   font-family: 'cinzel', arial, sans-serif;
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+@media (min-width: 360px) {
+  .intro .container {
+    top: 35%;
+  }
+  .intro .container .about {
+    font-size: 14px;
+  }
+  .button {
+    top: 100%;
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 393px) {
+  .intro .container {
+    top: 40%;
+  }
+}
+
+@media (min-width: 411px) {
+  .intro .container {
+    top: 36%;
+  }
+  .intro .container .about {
+    font-size: 15px;
+  }
+  .button {
+    font-size: 16px;
+    padding: 20px 50px;
+  }
+}
+
+@media (min-width: 768px) {
+  .intro .logo {
+    top: 7%;
+  }
+  .intro .container {
+    top: 42%;
+  }
+  .intro .container .about {
+    font-size: 22px;
+  }
+  .button {
+    top: 90%;
+    font-size: 23px;
+    padding: 30px 100px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .intro .logo {
+    top: 7%;
+  }
+  .intro .container {
+    top: 45%;
+  }
+  .intro .container .about {
+    font-size: 25px;
+  }
+  .button {
+    font-size: 26px;
+    padding: 35px 110px;
+    border: 2px solid black;
+  }
+}
+
+@media (min-width: 533px) and (orientation: landscape) {
+  .intro .logo {
+    top: 50%;
+    left: 5%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    height: 60%;
+  }
+  .intro .container {
+    top: 40%;
+    left: 45%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    width: 50%;
+  }
+  .intro .container .about {
+    font-size: 11px;
+  }
+  .button {
+    top: 90%;
+    left: 70%;
+    font-size: 12px;
+    padding: 20px 50px;
+  }
+}
+
+@media (min-width: 640px) and (orientation: landscape) {
+  .intro .logo {
+    left: 4%;
+  }
+  .intro .container {
+    top: 40%;
+    left: 45%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    width: 45%;
+  }
+  .intro .container .about {
+    font-size: 12px;
+  }
+  .button {
+    left: 67%;
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 731px) and (orientation: landscape) {
+  .intro .logo {
+    height: 55%;
+  }
+  .intro .container .about {
+    font-size: 13px;
+  }
+  .button {
+    font-size: 14px;
+    padding: 30px 80px;
+  }
+}
+
+@media (min-width: 1024px) and (orientation: landscape) {
+  .intro .logo {
+    top: 50%;
+    left: 5%;
+  }
+  .intro .container {
+    top: 40%;
+    left: 50%;
+    width: 37%;
+  }
+  .intro .container .about {
+    font-size: 18px;
+  }
+  .button {
+    top: 80%;
+    font-size: 19px;
+    padding: 30px 100px;
+  }
+}
+
+@media (min-width: 1366px) and (orientation: landscape) {
+  .intro .logo {
+    height: 55%;
+  }
+  .intro .container .about {
+    font-size: 21px;
+  }
+  .button {
+    font-size: 22px;
+    padding: 35px 110px;
+  }
+}
+
+@media (min-width: 1600px) and (orientation: landscape) {
+  .intro .container {
+    top: 45%;
+    left: 55%;
+  }
+  .intro .container .about {
+    font-size: 22px;
+  }
+  .button {
+    left: 72%;
+    font-size: 23px;
+    padding: 40px 120px;
+  }
+}
+
+.contact {
+  min-height: 20vh;
+  background-color: beige;
+  width: 100%;
+  margin: 100px auto 0 auto;
+  max-width: 1920px;
+  color: black;
+  font-family: 'cinzel', arial, sans-serif;
+  text-align: center;
 }
