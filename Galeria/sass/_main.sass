@@ -10,6 +10,7 @@
         flex-direction: row
         justify-content: space-around
         margin-top: 20px
+        overflow: hidden
         .pic1
             background-image: url(../img/obraz1.jpg)
         .pic2
@@ -35,6 +36,12 @@
             background-repeat: no-repeat
             margin: 10px auto 10px auto
             // border: 2px solid white
+@media (orientation:landscape)
+    .gallery
+        .images
+            .item
+                height: 50vh
+
 @media (min-width:768px)
     .gallery
         .images
