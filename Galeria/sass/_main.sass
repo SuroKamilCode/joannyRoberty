@@ -1,0 +1,50 @@
+.gallery
+    max-width: 1366px
+    // min-height: 100vh
+    background-color: beige
+    border-bottom: 1px solid black
+    margin: 0 auto
+    .images
+        display: flex
+        flex-wrap: wrap
+        flex-direction: row
+        justify-content: space-around
+        margin-top: 20px
+        .pic1
+            background-image: url(../img/obraz1.jpg)
+        .pic2
+            background-image: url(../img/obraz2.jpg)
+        .pic3
+            background-image: url(../img/obraz3.jpg)
+        .pic4
+            background-image: url(../img/obraz4.jpg)
+        .pic5
+            background-image: url(../img/obraz5.jpg)
+        .pic6
+            background-image: url(../img/obraz6.jpg)
+        .pic7
+            background-image: url(../img/obraz7.jpg)
+        .pic8
+            background-image: url(../img/obraz8.png)
+        .item
+            height: 25vh
+            width: 25vh
+            flex-basis: 45%
+            background-size: contain
+            background-position: center center
+            background-repeat: no-repeat
+            margin: 10px auto 10px auto
+            // border: 2px solid white
+@media (min-width:768px)
+    .gallery
+        .images
+            .itemm
+                height: 40vh
+                width: 40vh
+
+@media (min-width:1024px)
+    .gallery
+        .images
+            .item
+                height: 50vh
+                width: 50vh

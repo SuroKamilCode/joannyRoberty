@@ -5,6 +5,7 @@
 
 body {
   max-width: 1920px;
+  background-color: beige;
 }
 
 .logo {
@@ -39,4 +40,89 @@ body {
   transition: .3s;
   font-size: 2vh;
   border: 1px solid black;
+  text-transform: uppercase;
+}
+
+.logo a:hover {
+  color: beige;
+  background-color: black;
+}
+
+.gallery {
+  max-width: 1366px;
+  background-color: beige;
+  border-bottom: 1px solid black;
+  margin: 0 auto;
+}
+
+.gallery .images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 20px;
+}
+
+.gallery .images .pic1 {
+  background-image: url(../img/obraz1.jpg);
+}
+
+.gallery .images .pic2 {
+  background-image: url(../img/obraz2.jpg);
+}
+
+.gallery .images .pic3 {
+  background-image: url(../img/obraz3.jpg);
+}
+
+.gallery .images .pic4 {
+  background-image: url(../img/obraz4.jpg);
+}
+
+.gallery .images .pic5 {
+  background-image: url(../img/obraz5.jpg);
+}
+
+.gallery .images .pic6 {
+  background-image: url(../img/obraz6.jpg);
+}
+
+.gallery .images .pic7 {
+  background-image: url(../img/obraz7.jpg);
+}
+
+.gallery .images .pic8 {
+  background-image: url(../img/obraz8.png);
+}
+
+.gallery .images .item {
+  height: 25vh;
+  width: 25vh;
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin: 10px auto 10px auto;
+}
+
+@media (min-width: 768px) {
+  .gallery .images .itemm {
+    height: 40vh;
+    width: 40vh;
+  }
+}
+
+@media (min-width: 1024px) {
+  .gallery .images .item {
+    height: 50vh;
+    width: 50vh;
+  }
 }
